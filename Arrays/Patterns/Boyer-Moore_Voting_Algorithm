@@ -1,0 +1,15 @@
+# Definition : The Boyer–Moore Voting Algorithm is an efficient way to find the majority element in an array.
+# What is Majority Element?
+An element that appears more than [n/2] times in the array.
+
+* Algorithm Steps
+- Take a variable candidate and count = 0
+- Traverse the array:
+- If count == 0 → choose current element as candidate
+- If element == candidate → count++
+- Else → count--
+- Final candidate is the majority element
+
+*Complexity
+Time: O(n)
+Space: O(1)
