@@ -2,7 +2,7 @@
 // Link : https://leetcode.com/problems/stone-game/description/?envType=problem-list-v2&envId=array
 // Difficulty : Medium
 
-// Approach : Recursive + Two Pointer
+// Approach : Dynamic + Recursive
 // Time complexity : O(n^2)
 // Space complexity : O(n^2)   { Optimize O(n) by using DP }
 
