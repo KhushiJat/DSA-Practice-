@@ -7,13 +7,18 @@
 // Space complexity : O(1)
 
 class Solution {
-  public int missingNumber(int[] nums) {
-    int n = nums.length;
-    int xor = n;
+    int missingNum(int arr[]) {
+        // code here
+       int n = arr.length + 1;
+       int xor = 0;
 
-  for(int i=0; i<n; i++){
-    xor ^= i^ nums[i];
-  }
-  return xor;
-  }
+       for(int i = 1; i <= n; i++){
+       xor ^= i;
+       }
+
+      for(int num : arr){
+      xor ^= num;
+      }
+      return xor;
+    }
 }
